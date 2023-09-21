@@ -1,0 +1,245 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+    max-width: 100%;
+	font-family: Raleway, sans-serif;
+}
+
+nav{
+    width: 1440px;
+    height: 88px;
+    top: 0;
+    position: sticky;
+    background-color: #9A9999;
+    padding: 0px 120px;
+    display:flex;
+    justify-content: space-between;
+    color: black;
+    align-items: center;
+}
+
+.container{
+    margin: 70px 40px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.containerimg{
+    width: 680px;
+    display: flex;
+    justify-content: center;
+}
+
+.text_desc{
+    width: 680px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.size p{
+    font-size: 15px;
+    font-weight: 600;
+}
+.size{
+    width: 172px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 22px;
+    margin-bottom: 11;
+}
+
+
+.size-circle {
+    background-color: #9A9999;
+    width: 24px;
+    height: fit-content;
+    padding: 4px 0px 5px 0px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.size-circle:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.mainproductname{
+    font-weight: 500;
+    font-size: 36px;
+    text-align: center;
+}
+
+.mainprice{
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.sum_add{
+    display: flex;
+    width: 336px;
+    height: 36px;
+    font-size: 16px;
+    justify-content: center;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+.sum{
+    border-style: solid;
+    width: 156px;
+    height: 36px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+}
+
+
+.plus:hover{
+    border-style: groove ;
+}
+
+.minus:hover{
+    border-style: groove;
+}
+
+.add{
+    border-style: solid;
+    display: flex;
+    width: 180px;
+    height: 36px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+
+.add:hover{
+    background-color: black;
+    color: white;
+    border-style: solid;
+}
+.desc_label{
+    font-size: 22px;
+    font-weight: 500;
+    padding-left: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-style: outset;
+    margin-bottom: 12px;
+}
+.description{
+    width: 650px;
+    height: 238px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 22px;
+}
+
+.description p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.related_products{
+    width: 1218px;
+    margin-left: 100px;
+    margin-right: 40px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.label_rlt{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.product img{
+    width: 251px;
+    height: 335px;
+}
+
+.slider {
+    width: 1000px;
+    height: 450px;
+    position:relative;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  
+.slider::-webkit-scrollbar {
+    display: none;
+  }
+  
+.slider .slide {
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: 0.3s left ease-in-out;
+  }
+  
+.productname {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+.price{
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+}
+
+.slider .product {
+    margin-right: 20px;
+    width: 251px;
+    height: 409px;
+  }
+  
+.slider .product:last-child {
+    margin-right: 0;
+  }
+  
+.ctrl {
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+.ctrl-btn {
+    padding: 20px 20px;
+    min-width: 50px;
+    background: #fff;
+    border: none;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+  
+    position: absolute;
+    top: 50%;
+    margin-top: -27.5px;
+  }
+  
+  .ctrl-btn.pro-prev {
+    left: 0;
+  }
+  
+  .ctrl-btn.pro-next {
+    right: 0;
+  }

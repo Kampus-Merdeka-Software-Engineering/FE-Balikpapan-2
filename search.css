@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;	
+    max-width: 100%;
+}
+
+body {
+	background: linear-gradient(90deg,#DED6C4,#B7A697);		
+}
+
+.search {
+	width: 100%;
+	padding: 30px;
+}
+
+.searchform {
+	padding: 20px 0px;	
+	position: relative;	
+}
+
+.search_input {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 75%;
+	transition: .2s;
+}
+
+.search_input:active,
+.search_input:focus,
+.search_input:hover {
+	outline: none;
+	border-bottom-color: #6A679E;
+}
+

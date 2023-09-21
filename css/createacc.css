@@ -19,23 +19,20 @@ nav{
     align-items: center;
 }
 
-
-body {
-	background-image: url("../image/bglogin.png");
-}
-
 .container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
+	background-image: url("../image/bglg.png");
+	background-size: cover;
 }
 
 .screen {		
 	background: hsla(0, 2%, 56%, 0.5);
 	position: relative;	
-	height: 636px;
-	width: 551px;
+	height: 540px;
+	width: 520px;
     border-radius: 20px;	
 	display: flex;
 	flex-direction: column;
@@ -64,9 +61,9 @@ body {
 
 .login {
 	width: 420px;
-	height: 500px;
-	padding: 30px;
-	padding-top: 20px;
+	height: 460px;
+	padding: 20px;
+	padding-top: 16px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -75,6 +72,7 @@ body {
 .login__field {
 	padding: 12px 0px;	
 	position: relative;	
+	text-shadow: 2px 2px #9A9999;
 }
 
 .login__icon {

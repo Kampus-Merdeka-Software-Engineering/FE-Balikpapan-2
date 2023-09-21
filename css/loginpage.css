@@ -27,16 +27,16 @@ nav{
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
-	background-image: url("../image/bglogin.png");
-	background-size: contain;
+	background-image: url("../image/bglg.png");
+	background-size:cover;
 }
 
 
 .screen {		
 	background: hsla(0, 2%, 56%, 0.5);
 	position: relative;	
-	height: 500px;
-	width: 551px;
+	height: 480px;
+	width: 500px;
     border-radius: 20px;	
 	display: flex;
 	flex-direction: column;

@@ -1,0 +1,238 @@
+*{
+	margin: 0;
+	padding: 0;	
+    max-width: 100%;
+}
+
+nav{
+    width: 100%;
+    height: 36px;
+    background-color: #B7A697;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+.shopmenu{
+    color: #000;
+    padding-left: 30px;
+    padding-top: 4px;
+    text-align: center;
+    font-family: 'inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.searchmenu{
+    display: flex;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    padding-top: 5px;
+    padding-left: 16px;
+
+}
+
+.leftnavbar{
+    display: flex;
+    /* justify-content: left; */
+}
+
+.cartmenu{
+    display: flex;
+    width: 28px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+    /* padding-right: 36 px; */
+}
+
+.accountmenu{
+    display: flex;
+    width: 28px;
+    height: 28px;
+    justify-content: center;
+    padding-right: 30px;
+    padding-left:16px;
+    align-items: center;
+}
+
+.rightnavbar{
+    display: flex;
+    /* justify-content: right; */
+}
+
+.herosection{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    background-color: #DED6C4;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.texthero{
+    /* padding-left: 170px; */
+    padding-left: 15%;
+    text-align: center;
+}
+
+.texthero h1{
+    font-family: 'ruda', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    /* padding-left: 50%; */
+}
+
+.texthero h2{
+    font-family: 'ruda', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    /* padding-left: 200px; */
+}
+
+.texthero h3{
+    font-family: 'Pinyon Script', sans-serif;
+    font-size: 48px;
+    font-weight: 300; 
+    /* padding-left: 65%; */
+}
+
+.imagehero{
+    display: flex;
+    justify-content: right;
+}
+
+.imagehero img{
+    width:80%;
+    height: 80%;
+}
+
+.bestsellersection{
+    background-color: white;
+}
+
+.bestsellertext{
+    text-align: center;
+    padding-top: 34px;
+}
+
+.bestsellertext1{
+    font-family: 'ruda', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+
+}
+.bestsellertext2{
+    font-family: 'sura', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.bestsellerimages{
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: space-around;
+    margin: 32px 120px;
+    margin-bottom: 34px;
+}
+
+.productname {
+    font-family: 'inter', sans-serif;
+    font-size: 16px;
+    font-weight:500;
+    text-align: center;
+}
+.price{
+    font-family: 'inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.gallerytext{
+    text-align: center;
+    padding-top: 34px;
+    font-family: 'ruda', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.galleryimages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 32px 120px;
+}
+
+.usernameig{
+    text-align: center;
+    font-family: 'inter', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    padding-bottom: 24px;
+}
+
+.footersection{
+    background-color: #F3EDE1;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.footersection ul li{
+    list-style: none;
+    font-family: 'inter', sans-serif;
+    font-weight: 500;
+    color: #000000;
+    display:inline-block;
+    margin: 0 50px;
+    position: relative;
+}
+.footersection ul li a{
+    text-decoration: none;
+    color: #3F3836;
+    text-transform: uppercase;
+}
+.footersection ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:#3F3836;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.footersection ul li:hover::after{
+    width: 100%;
+}
+
+.paymentimages{
+    background-color: #F3EDE1;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.socialsection{
+    background-color: #3F3836;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iglogo{
+    padding-right: 34px;}

@@ -5,20 +5,7 @@
     max-width: 100%;
 	font-family: Raleway, sans-serif;
 }
-
-nav{
-    width: 1440px;
-    height: 88px;
-    top: 0;
-    position: sticky;
-    background-color: #9A9999;
-    padding: 0px 120px;
-    display:flex;
-    justify-content: space-between;
-    color: black;
-    align-items: center;
-}
-
+  
 .category{
     font-size: 36px;
     font-weight:700;

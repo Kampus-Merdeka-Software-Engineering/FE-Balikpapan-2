@@ -7,17 +7,6 @@
     <link rel="stylesheet" href="../css/detail_product.css"></link>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            LOGO
-        </div>
-        <div class="wrap-menu">
-            <a href="#cart" class="cart">My Cart</a>
-            <a href="#wishlist" class="wishlist">Wishlist</a>
-            <a href="#account" class="account">My Account</a>
-        </div>
-    </nav>
-
     <div class="container">
         <div class="containerimg">
             <img src="../image/top 4.jpg" alt="product4" width="426px" height="568px">
@@ -77,69 +66,93 @@
             <p>RELATED PRODUCTS</p>
         </div>
         <div class="related_products">
-            <div class="slider" id="slider">
-                <div class="slide" id="slide">
-                    <div class="product">
-                        <img src="../image/top 4.jpg" alt="product4" width="251px" height="335px">
+            <div id="slider-container" class="slider">
+                <div class="slide">
+                        <img src="../image/top 10.jpg" alt="">
                         <div class="productname">
                             <p>Black Top</p>
                         </div>
                         <div class="price">
                             <p>Rp 280.000,00</p>
                         </div>
-                    </div>
-                    <div class="product">
-                        <img src="../image/top 4.jpg" alt="product4" width="251px" height="335px">
-                        <div class="productname">
-                            <p>Black Top</p>
-                        </div>
-                        <div class="price">
-                            <p>Rp 280.000,00</p>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <img src="../image/top 4.jpg" alt="product4" width="251px" height="335px">
-                        <div class="productname">
-                            <p>Black Top</p>
-                        </div>
-                        <div class="price">
-                            <p>Rp 280.000,00</p>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <img src="../image/top 4.jpg" alt="product4" width="251px" height="335px">
-                        <div class="productname">
-                            <p>Black Top</p>
-                        </div>
-                        <div class="price">
-                            <p>Rp 280.000,00</p>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <img src="../image/top 4.jpg" alt="product4" width="251px" height="335px">
-                        <div class="productname">
-                            <p>Black Top</p>
-                        </div>
-                        <div class="price">
-                            <p>Rp 280.000,00</p>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <img src="../image/top 4.jpg" alt="product4" width="251px" height="335px">
-                        <div class="productname">
-                            <p>Black Top</p>
-                        </div>
-                        <div class="price">
-                            <p>Rp 280.000,00</p>
-                        </div>
-                    </div>
                 </div>
-                <button class="ctrl-btn pro-prev">Prev</button>
-                <button class="ctrl-btn pro-next">Next</button>
-            </div> 
+                <div class="slide">
+                        <img src="../image/top 11.jpg" alt="">
+                        <div class="productname">
+                            <p>Black Top</p>
+                        </div>
+                        <div class="price">
+                            <p>Rp 280.000,00</p>
+                        </div>
+                </div>
+                <div class="slide">
+                        <img src="../image/top 1.jpg" alt="">
+                        <div class="productname">
+                            <p>Black Top</p>
+                        </div>
+                        <div class="price">
+                            <p>Rp 280.000,00</p>
+                        </div>
+                </div>
+                <div class="slide">
+                        <img src="../image/top 7.jpg" alt="">
+                        <div class="productname">
+                            <p>Black Top</p>
+                        </div>
+                        <div class="price">
+                            <p>Rp 280.000,00</p>
+                        </div>
+                </div>
+                <div class="slide">
+                        <img src="../image/top 5.jpg" alt="">
+                        <div class="productname">
+                            <p>Black Top</p>
+                        </div>
+                        <div class="price">
+                            <p>Rp 280.000,00</p>
+                        </div>
+                </div>
+                <div class="slide">
+                        <img src="../image/top 12.jpg" alt="">
+                        <div class="productname">
+                            <p>Black Top</p>
+                        </div>
+                        <div class="price">
+                            <p>Rp 280.000,00</p>
+                        </div>
+                </div>
+                <div class="slide">
+                        <img src="../image/top 9.jpg" alt="">
+                        <div class="productname">
+                            <p>Black Top</p>
+                        </div>
+                        <div class="price">
+                            <p>Rp 280.000,00</p>
+                        </div>
+                </div>
+                <div class="slide">
+                        <img src="../image/top 2.jpg" alt="">
+                        <div class="productname">
+                            <p>Black Top</p>
+                        </div>
+                        <div class="price">
+                            <p>Rp 280.000,00</p>
+                        </div>
+                </div>
+                <div onclick="prev()" class="control-prev-btn">
+                     <i class="fas fa-arrow-left"></i>
+                </div>
+                <div onclick="next()" class="control-next-btn">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+            
+            
+            <div class="overlay"></div>
         </div>
     </div>
     
+
 </body>
 
 <script src="../js/detail_product.js"></script>

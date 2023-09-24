@@ -6,6 +6,7 @@
 //     inputTotal.value = currentValue;
 //     });
 
+
 function prev(){
   document.getElementById('slider-container').scrollLeft -= 270;
 }
@@ -15,8 +16,10 @@ function next()
   document.getElementById('slider-container').scrollLeft += 270;
 }
 
-
-$(".slide img").on("click" , function(){
-$(this).toggleClass('zoomed');
-$(".overlay").toggleClass('active');
-})
+var slideImgs = document.querySelectorAll(".slide img");
+slideImgs.forEach(function(img) {
+img.addEventListener("click", function() {
+this.classList.toggle('zoomed');
+document.querySelector(".overlay").classList.toggle('active');
+});
+});

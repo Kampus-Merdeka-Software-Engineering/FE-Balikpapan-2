@@ -4,70 +4,10 @@
     max-width: 100%;
 }
 
-nav{
-    width: 100%;
-    height: 36px;
-    background-color: #B7A697;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-}
-
-.shopmenu{
-    color: #000;
-    padding-left: 30px;
-    padding-top: 4px;
-    text-align: center;
-    font-family: 'inter', sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-
-.searchmenu{
-    display: flex;
-    width: 24px;
-    height: 24px;
-    justify-content: center;
-    padding-top: 5px;
-    padding-left: 16px;
-
-}
-
-.leftnavbar{
-    display: flex;
-    /* justify-content: left; */
-}
-
-.cartmenu{
-    display: flex;
-    width: 28px;
-    height: 28px;
-    justify-content: center;
-    align-items: center;
-    /* padding-right: 36 px; */
-}
-
-.accountmenu{
-    display: flex;
-    width: 28px;
-    height: 28px;
-    justify-content: center;
-    padding-right: 30px;
-    padding-left:16px;
-    align-items: center;
-}
-
-.rightnavbar{
-    display: flex;
-    /* justify-content: right; */
-}
-
 .herosection{
+    margin-top: 5rem;
     width: 100%;
-    height: 600px;
+    height: 50%;
     display: flex;
     background-color: #DED6C4;
     justify-content: space-between;
@@ -76,30 +16,26 @@ nav{
 
 
 .texthero{
-    /* padding-left: 170px; */
-    padding-left: 15%;
+    /* padding-left: 15%; */
     text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.texthero h1{
+.texthero h1, h2{
     font-family: 'ruda', sans-serif;
     font-size: 36px;
     font-weight: 500;
-    /* padding-left: 50%; */
-}
-
-.texthero h2{
-    font-family: 'ruda', sans-serif;
-    font-size: 36px;
-    font-weight: 500;
-    /* padding-left: 200px; */
 }
 
 .texthero h3{
     font-family: 'Pinyon Script', sans-serif;
     font-size: 48px;
     font-weight: 300; 
-    /* padding-left: 65%; */
+    text-transform: lowercase;
 }
 
 .imagehero{
@@ -172,6 +108,7 @@ nav{
 .usernameig{
     text-align: center;
     font-family: 'inter', sans-serif;
+    text-transform: lowercase;
     font-weight: 300;
     font-size: 16px;
     padding-bottom: 24px;
@@ -180,16 +117,17 @@ nav{
 .footersection{
     background-color: #F3EDE1;
     width: 100%;
-    height: 120px;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding-bottom: 50px;
+    padding-bottom: 50px; padding-top: 50px;
 }
 
 .footersection ul li{
     list-style: none;
     font-family: 'inter', sans-serif;
+    font-size: 12px;
     font-weight: 500;
     color: #000000;
     display:inline-block;
@@ -215,20 +153,30 @@ nav{
     width: 100%;
 }
 
-.paymentimages{
-    background-color: #F3EDE1;
-    width: 100%;
-    height: 120px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding-top: 50px;
+.footersection .logo{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #000000;
+    text-transform: lowercase;
+    padding-bottom: 1rem; padding-top: 5rem
 }
+
+.footersection .about-us{
+    font-size: 12px;
+    font-weight: 300;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-left: 20%; margin-right: 20%;
+    padding-bottom: 1rem;
+    text-align: center;
+
+}
+
 
 .socialsection{
     background-color: #3F3836;
     width: 100%;
-    height: 60px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -236,3 +184,36 @@ nav{
 
 .iglogo{
     padding-right: 34px;}
+
+
+
+@media (max-width: 991px){
+    .texthero h1,h2{
+        font-size: 24px;
+    }
+
+    .texthero h3{
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px){
+    .texthero h1,h2{
+        font-size: 18px;
+    }
+
+    .texthero h3{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 450px){
+    .texthero h1,h2{
+        font-size: 6px;
+    }
+
+    .texthero h3{
+        font-size: 8px;
+    }
+
+}

@@ -70,59 +70,65 @@ nav{
 .size-circle:hover{
     background-color: black;
     color: white;
+    cursor: default;
 }
 
 
 .mainproductname{
     font-weight: 500;
-    font-size: 36px;
+    font-size: 32px;
     text-align: center;
 }
 
 .mainprice{
     font-weight: 300;
-    font-size: 30px;
+    font-size: 28px;
     text-align: center;
     margin-bottom: 22px;
 }
 
-.sum_add{
+.add-item{
+    width:300px ;
     display: flex;
-    width: 336px;
-    height: 36px;
-    font-size: 16px;
-    justify-content: center;
-    margin-top: 22px;
-    margin-bottom: 22px;
-}
-
-.sum{
-    border-style: solid;
-    width: 156px;
-    height: 36px;
-    display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    font-weight: 600;
+    margin-top: 36px;
+    margin-bottom: 12px;
+    border: 2px solid;
 }
+.quantity-input{
+    width: 120px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid;
 
+}
+.quantity-input span{
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+}
 
 .plus:hover{
-    border-style: groove ;
+    border-style: groove;
+    cursor: default;
 }
 
 .minus:hover{
     border-style: groove;
+    cursor: default;
 }
 
 .add{
-    border-style: solid;
     display: flex;
     width: 180px;
     height: 36px;
     justify-content: center;
     align-items: center;
     font-weight: 400;
+    cursor: default;
 }
 
 .add:hover{
@@ -130,6 +136,7 @@ nav{
     color: white;
     border-style: solid;
 }
+
 .desc_label{
     font-size: 22px;
     font-weight: 500;
@@ -200,7 +207,6 @@ nav{
     box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
 }
 .product {
-
     position: relative;
 }
 .product img {
@@ -260,12 +266,12 @@ nav{
    
 }
 .overlay{
-       position: absolute;
-   height: 100%;
-   width: 100%;
-   background: rgba(0,0,0,.45);
-   top: 0;
-       display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.45);
+    top: 0;
+    display: none;
 }
 .overlay.active{
    display: block;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="../css/detail_product.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container">
@@ -43,109 +44,113 @@
                     <p>ADD TO CHART</p>
                 </div>
             </div>
-            <!-- <div class="sum_add">
-                <div class="sum">
-                    <div class="minus">
-                        <button type="button" value="0">-</button>  
-                    </div>
-                    <input type=“text” id=“counter” value=“0” />
-                    <button id="incrementButton">+</button>
-                </div>
-                <div class="add">
-                    <p>ADD TO CHART</p>
-                </div>
-            </div> -->
+         
             <div class="description">
                 <div class="desc_label">
                     Description
                 </div>
-                <p>
-                <li>Style : Street</li>
-                <li>Occasion : Back to school</li>
-                <li>Print : Solid</li>
-                <li>Material : Acrylic</li>
-                <li>Sleeve : Long sleeve</li>
-                <li>Neck : V neck</li>
-                <li>Length : Crop</li>
-                <li>Fit : Normal fit</li>
-                We recommend dry cleaning for the first wash. Product color may vary slightly depending on the user's monitor resolution.
-                </p>
+                <div class="desc_detail">
+                    <p>
+                        <li>Style : Street</li>
+                        <li>Occasion : Back to school</li>
+                        <li>Print : Solid</li>
+                        <li>Material : Acrylic</li>
+                        <li>Sleeve : Long sleeve</li>
+                        <li>Neck : V neck</li>
+                        <li>Length : Crop</li>
+                        <li>Fit : Normal fit</li>
+                        We recommend dry cleaning for the first wash. Product color may vary slightly depending on the user's monitor resolution.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="related">
-        <div class="label_rlt">
-            <p>Related Products</p>
-        </div>
-        <div id="slider-container" class="slider">
-            <div class="product" id="top01">
-                <img src="../image/top 1.jpg" alt="product1" width="220px" height="293px">
-                <div class="productname">
-                    Essential Crew Neck
-                </div>
-                <div class="price">
-                    Rp 280.000,00
-                </div>
-            </div>
-            <div class="product" id="top02">
-                <img src="../image/top 2.jpg" alt="product2" width="220px" height="293px">
-                <div class="productname">
-                    Round Neck Button Cardigan
-                </div>
-                <div class="price">
-                    Rp 280.000,00
-                </div>
-            </div>
-            <div class="product" id="top03">
-                <img src="../image/top 3.jpg" alt="product3" width="220px" height="293px">
-                <div class="productname">
-                    V-neck Cardigan
-                </div>
-                <div class="price">
-                    Rp 280.000,00
-                </div>
-            </div>
-            <div class="product" id="top04">
-                <img src="../image/top 4.jpg" alt="product4" width="220px" height="293px">
-                <div class="productname">
-                    <a style="text-decoration: none; color: black;" href="detail_product.html">Half Zip-up Knitted</a>
-                </div>
-                <div class="price">
-                    Rp 280.000,00
-                </div>
-            </div>
-            <div class="product" id="top09">
-                <img src="../image/top 9.jpg" alt="product8" width="220px" height="293px">
-                <div class="productname">
-                    Jacket Sleeveless Knit Set
-                </div>
-                <div class="price">
-                    Rp 280.000,00
-                </div>
-            </div>
-            <div class="product" id="top10">
-                <img src="../image/top 8.jpg" alt="product1" width="220px" height="293px">
-                <div class="productname">
-                    Collar Half Button
-                </div>
-                <div class="price">
-                    Rp 280.000,00
-                </div>
-            </div>
-            <div onclick="prev()" class="control-prev-btn">
-                 <p>prev</p>
-            </div>
-            <div onclick="next()" class="control-next-btn">
-                <i class='fas fa-angle-double-right'></i>
-            </div>
-        </div>
-        
-        
-        <div class="overlay"></div>
+    <div class="related-label">
+        <p>RELATED PRODUCTS</p>
     </div>
-    
-
+    <div class="related-wrap">
+        <i class="fa" id="prev">&#xf0a8;</i>
+        <div class="related">
+            <div class="slider">
+                <span class="product" id="top04">
+                    <img src="../image/top 4.jpg">
+                    <div class="productname">
+                        <a style="text-decoration: none; color: black;" href="detail_product.html">Half Zip-up Knitted</a>
+                    </div>
+                    <div class="price">
+                        Rp 280.000,00
+                    </div>
+                </span>
+                <span class="product" id="top05">
+                    <img src="../image/Cutted Basic Crop Shirt OG19 - White _ S_M.jpg">
+                    <div class="productname" id="top05">
+                        Cutted Basic Crop Shirt
+                    </div>
+                    <div class="price">
+                        Rp 280.000,00
+                    </div>
+                </span>
+                <span class="product" id="dress03">
+                    <img src="../image/Button Mini Dress OM322 - Black _ S_M.jpg">
+                    <div class="productname" id="top05">
+                        Button Mini Dress
+                    </div>
+                    <div class="price">
+                        Rp 280.000,00
+                    </div>
+                </span>
+                <span class="product" id="dress05">
+                    <img src="../image/Button Detail Velvet Mini Dress BJ304 - Beige _ S_M.jpg">
+                    <div class="productname" id="top05">
+                        Button Detail Velvet Mini Dress
+                    </div>
+                    <div class="price">
+                        Rp 280.000,00
+                    </div>
+                </span>
+            </div>
+            <div class="slider">
+                <span class="product" id="top06">
+                    <img src="../image/top 6.jpg">
+                    <div class="productname">
+                        Square Neck Cropped Cardigan
+                    </div>
+                    <div class="price">
+                        Rp 280.000,00
+                    </div>
+                </span>
+                <span class="product" id="pants03">
+                    <img src="../image/Basic Pintuck Tailored Pants CG30.jpg">
+                    <div class="productname" id="top05">
+                        Basic Pintuck Tailored Pants
+                    </div>
+                    <div class="price">
+                        Rp 280.000,00
+                    </div>
+                </span>
+                <span class="product" id="skirt02">
+                    <img src="../image/Jeans Long Skirt CS29 - Dark Blue _ L.jpg">
+                    <div class="productname" id="top05">
+                        Jeans Long Skirt
+                    </div>
+                    <div class="price">
+                        Rp 280.000,00
+                    </div>
+                </span>
+                <span class="product" id="pants04">
+                    <img src="../image/Double Buckled Cotton Pintuck Pants OJ27.jpg">
+                    <div class="productname" id="top05">
+                        Double Buckled Cotton Pants
+                    </div>
+                    <div class="price">
+                        Rp 280.000,00
+                    </div>
+                </span>
+            </div>
+        </div>
+        <i class="fa" id="next">&#xf0a9;</i>
+    </div>
 </body>
 
 <script src="../js/detail_product.js"></script>

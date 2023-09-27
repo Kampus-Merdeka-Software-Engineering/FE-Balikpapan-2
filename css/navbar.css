@@ -1,0 +1,246 @@
+:root{
+    --color1: #F3EDE1;
+    --color2: #DED6C4;
+    --color3: #B7A697;
+    --color4: #A58A7C;
+    --color5: #3F3836;
+    --black: #000000;
+    --border: .1rem solid rgba(0,0,0,.1);
+    --border-hover: .1rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: width none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #3F3836;
+}
+
+.header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .header-1{
+    background: #B7A697;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header .header-1 .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #000000;
+    text-transform: lowercase;
+    margin-left: 3rem;
+
+}
+
+.header .header-1 .search-form{
+    width: 20rem;
+    height: 3rem;
+    overflow: hidden;
+    background: #B7A697;
+    display: flex;
+}
+
+
+.header .header-1 .search-form input{
+    background: none;
+    font-size: 1.6rem;
+    padding: 0 1.2rem;
+    height: 100%;
+    width: 100%;
+    text-transform: none;
+    color: #000000;
+    border: none;
+	border-bottom: 2px solid #A58A7C;
+}
+
+.header .header-1 .search-form label{
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    cursor: pointer;
+}
+
+.header .header-1 .icons div{
+    display: inline-block;
+    margin-right: 3rem;
+    color: #000000;
+    cursor: pointer;
+}
+
+#search-btn{
+    display: none;
+}
+
+.header .header-2{
+    background: #F3EDE1;
+}
+
+.header .header-2 .navbar{
+    text-align: center;
+}
+
+.header .header-2 .navbar a{
+    color: #000000;
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: 'inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header .header-2 .navbar a:hover{
+    background: #DED6C4;
+}
+
+/* .header .header-2.active{
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+} */
+
+
+.bottom-navbar{
+    text-align: center;
+    background: #F3EDE1;
+    position: fixed;
+    bottom:0; left:0; right:0;
+    z-index: 1000;
+    display: none;
+}
+
+.bottom-navbar a{
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: #000000;
+}
+
+.bottom-navbar a:hover{
+    background: #DED6C4;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+}
+
+ul li a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul li ul.dropdown li{
+    display: block;
+}
+
+ul li ul.dropdown{
+    background: #F3EDE1;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    top: auto;
+    bottom: 100%;
+}
+
+ul li ul.dropdown li a {
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+} 
+
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 768px){
+
+    html{
+        scroll-padding-top: 0;
+    }
+
+    body{
+        padding-bottom: 6rem;
+    }
+
+    .header .header-2{
+        display: none;
+    }
+
+    .bottom-navbar{
+        display: block;
+    }
+
+    #search-btn{
+        display: inline-block;
+    }
+
+    .header .header-1{
+        box-shadow: var(--box-shadow);
+        position: relative;
+    }
+
+    .header .header-1 .search-form{
+        position: absolute;
+        top:-115%; right:7rem;
+        width: 75%;
+        box-shadow: var(--box-shadow);
+    }
+
+    .header .header-1 .search-form.active{
+        top:115%;
+        border-radius: 3rem;
+        height: 4rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+}

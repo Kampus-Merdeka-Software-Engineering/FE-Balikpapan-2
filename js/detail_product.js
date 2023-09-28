@@ -17,7 +17,7 @@ xl.addEventListener("click", ()=>{
   size="xl"
 });
 
-console.log("size");
+console.log(size);
 
 
 const plus = document.querySelector(".plus"),
@@ -37,19 +37,22 @@ minus.addEventListener("click", ()=>{
 });
 
 
-function prev(){
-  document.getElementById('slider-container').scrollLeft -= 270;
-}
+let scrollContainer = document.querySelector(".related");
+let prev = document.getElementById("prev");
+let next = document.getElementById("next");
 
-function next()
-{
-  document.getElementById('slider-container').scrollLeft += 270;
-}
+scrollContainer.addEventListener("wheel",(evt) =>{
+  evt.preventDefault();
+  scrollContainer.scrollLeft += evt.deltaY;
+  scrollContainer.style.scrollBehavior = "smooth";
+})
 
-var slideImgs = document.querySelectorAll(".slide img");
-slideImgs.forEach(function(img) {
-img.addEventListener("click", function() {
-this.classList.toggle('zoomed');
-document.querySelector(".overlay").classList.toggle('active');
+prev.addEventListener("click",()=>{
+  scrollContainer.style.scrollBehavior = "smooth";
+  scrollContainer.scrollLeft -= 900;
 });
-});
+
+next.addEventListener("click", ()=>{
+  scrollContainer.style.scrollBehavior = "smooth";
+  scrollContainer.scrollLeft += 900;
+})

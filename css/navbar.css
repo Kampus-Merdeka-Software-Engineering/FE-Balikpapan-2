@@ -191,6 +191,80 @@ ul li:hover ul.dropdown{
     display: block;
 } 
 
+/* FOOTER */
+
+.footersection{
+    background-color: #F3EDE1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px; padding-top: 50px;
+}
+
+.footersection ul li{
+    list-style: none;
+    font-family: 'inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #000000;
+    display:inline-block;
+    margin: 0 50px;
+    position: relative;
+}
+.footersection ul li a{
+    text-decoration: none;
+    color: #3F3836;
+    text-transform: uppercase;
+}
+.footersection ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:#3F3836;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.footersection ul li:hover::after{
+    width: 100%;
+}
+
+.footersection .logo{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #000000;
+    text-transform: lowercase;
+    padding-bottom: 1rem; padding-top: 5rem
+}
+
+.footersection .about-us{
+    font-size: 12px;
+    font-weight: 300;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-left: 20%; margin-right: 20%;
+    padding-bottom: 1rem;
+    text-align: center;
+
+}
+
+
+.socialsection{
+    background-color: #3F3836;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iglogo{
+    padding-right: 34px;}
+
+
 @media (max-width: 991px){
     html{
         font-size: 55%;

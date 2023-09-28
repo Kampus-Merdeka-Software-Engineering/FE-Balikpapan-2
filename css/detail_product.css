@@ -1,23 +1,10 @@
 * {
-	box-sizing: border-box;
 	margin: 0;
 	padding: 0;	
     max-width: 100%;
 	font-family: Raleway, sans-serif;
 }
 
-nav{
-    width: 1440px;
-    height: 88px;
-    top: 0;
-    position: sticky;
-    background-color: #9A9999;
-    padding: 0px 120px;
-    display:flex;
-    justify-content: space-between;
-    color: black;
-    align-items: center;
-}
 
 .container{
     margin: 70px 40px;
@@ -127,10 +114,12 @@ nav{
     height: 36px;
     justify-content: center;
     align-items: center;
-    font-weight: 400;
     cursor: default;
 }
-
+.add p{
+    font-size: 16px;
+    font-weight: 500;
+}
 .add:hover{
     background-color: #3F3836;
     color: white;
@@ -185,12 +174,14 @@ nav{
 }
   
 .productname {
+    font-size: 14px;
     padding-top: 8px;
     font-weight:600;
     text-align: center;
 }
   
 .price{
+    font-size: 12px;
     font-weight: 400;
     text-align: center;
 }
@@ -221,9 +212,8 @@ nav{
     margin: 20px auto ;
 }
   
-  
 #prev, #next{
-    width: 30px;
+    width: 40px;
     cursor: pointer;
     margin: 30px;
 }

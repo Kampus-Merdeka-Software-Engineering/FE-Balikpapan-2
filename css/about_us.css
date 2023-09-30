@@ -1,6 +1,9 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-weight: normal;
+    max-width: 100%;
   }
   
 body {
@@ -15,18 +18,20 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-bottom: 5rem;
 }
 .brand img{
     width: 180px;
     height: 100px;
 }
 .brand h2{
-    font-size: 24px;
+    font-size: 20px;
     width: 900px;
 }
 
 .team h2{
     font-size: 30px;
+    font-weight: 500;
 }
 h3 {
     color: white;

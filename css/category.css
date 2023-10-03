@@ -18,25 +18,32 @@
 }
 
 .content{
-    display: flex;
+    /* display: flex;
     margin: 32px 120px;
-    flex-direction: column;
+    flex-direction: column; */
+
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: space-around;
+    margin: 32px 120px;
 }
 
 
-.baris{
+/* .baris{
     width: 1200px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 34px;
-}
+} */
 
 .product{
-    margin: 0px 30px;
-    width:"240px";
-    height:"320px";
+    text-align: center;
+    margin-bottom: 34px;
+    width: 240px;
+    height: 320px;
 }
+
 .productname {
     font-size: 14px;
     font-weight:600;

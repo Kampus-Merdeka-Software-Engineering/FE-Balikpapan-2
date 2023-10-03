@@ -7,6 +7,7 @@
 
 
 .container{
+    padding-top: 5rem;
     margin: 70px 40px;
     display: flex;
     justify-content: space-between;
@@ -140,7 +141,7 @@
 .desc_detail{
     padding: 8px 8px;
     background-color: #DED6C4;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
 }
 .description{

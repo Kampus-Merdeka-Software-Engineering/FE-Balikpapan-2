@@ -9,7 +9,6 @@
 body {
     background: #DED6C4;
     text-align: center;
-    padding: 1em;
 }
 
 .brand{
@@ -18,6 +17,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding-top: 9rem;
     margin-bottom: 5rem;
 }
 .brand img{

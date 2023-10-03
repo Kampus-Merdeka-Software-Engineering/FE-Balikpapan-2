@@ -5,7 +5,9 @@
     max-width: 100%;
 	font-family: Raleway, sans-serif;
 }
-
+main{
+	padding-top: 8rem;
+}
 .container {
 	display: flex;
 	width: 100%;

@@ -16,7 +16,6 @@
     box-sizing: border-box;
     outline: none; border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: width none;
 }
 
@@ -36,7 +35,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 .header {
-    position: sticky;
+    position:fixed;
     top: 0; left: 0; right: 0;
     z-index: 1000;
 }
@@ -192,7 +191,9 @@ ul li:hover ul.dropdown{
 } 
 
 /* FOOTER */
-
+.footer {
+    flex-shrink: 0
+  }
 .footersection{
     background-color: #F3EDE1;
     width: 100%;

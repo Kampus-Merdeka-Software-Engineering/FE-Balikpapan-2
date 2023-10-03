@@ -1,25 +1,3 @@
-const s = document.getElementById("s"),
-m = document.getElementById("m"),
-l = document.getElementById("l"),
-xl = document.getElementById("xl");
-
-const size= ""
-s.addEventListener("click", ()=>{
-  size="s";
-});
-m.addEventListener("click", ()=>{
-  size="m"
-});
-l.addEventListener("click", ()=>{
-  size="l"
-});
-xl.addEventListener("click", ()=>{
-  size="xl"
-});
-
-console.log(size);
-
-
 const plus = document.querySelector(".plus"),
 minus = document.querySelector(".minus"),
 num = document.querySelector(".num");

@@ -35,7 +35,7 @@ class Header extends HTMLElement {
 
         <div class="header-2">
             <nav class="navbar">
-                <a href="./index.html">Home</a>
+                <a href="../index.html">Home</a>
                 <a href="./category_tops.html">Tops</a>
                 <a href="./category_bottoms.html">Bottoms</a>
                 <a href="./category_dresses.html">Dresses</a>

@@ -74,9 +74,7 @@
 }
 
 .bestsellerimages{
-    display: flex;
-    flex-wrap: wrap;   
-    justify-content: space-around;
+
     margin: 32px 120px;
     margin-bottom: 34px;
 }
@@ -119,6 +117,57 @@
     padding-bottom: 24px;
 }
 
+
+
+.subscriptionsection{
+    background-color: #ded6c4;
+    padding-bottom: 5rem; padding-top: 5rem;
+}
+
+
+.subscriptionsection h1{
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+
+#subscription-box{
+    display: block;
+    height: 3rem;
+    width: 30rem;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subscribe-btn {
+    display: block;
+    height: inherit;
+    background-color: #3F3836;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subscribe-btn:hover {
+    background-color: #000;
+    color: white;
+}
+
+
+
 .footersection{
     background-color: #F3EDE1;
     width: 100%;
@@ -127,6 +176,26 @@
     align-items: center;
     justify-content: center;
     padding-bottom: 50px; padding-top: 50px;
+}
+
+
+.footersection .logo{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #000000;
+    text-transform: lowercase;
+    padding-bottom: 1rem;
+}
+
+.footersection .about-us{
+    font-size: 12px;
+    font-weight: 300;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-left: 20%; margin-right: 20%;
+    padding-bottom: 1rem;
+    text-align: center;
+
 }
 
 .footersection ul li{
@@ -157,26 +226,6 @@
 .footersection ul li:hover::after{
     width: 100%;
 }
-
-.footersection .logo{
-    font-size: 2rem;
-    font-weight: bolder;
-    color: #000000;
-    text-transform: lowercase;
-    padding-bottom: 1rem; padding-top: 5rem
-}
-
-.footersection .about-us{
-    font-size: 12px;
-    font-weight: 300;
-    color: #000000;
-    font-family: 'Inter', sans-serif;
-    margin-left: 20%; margin-right: 20%;
-    padding-bottom: 1rem;
-    text-align: center;
-
-}
-
 
 .socialsection{
     background-color: #3F3836;

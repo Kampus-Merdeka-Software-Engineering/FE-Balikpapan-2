@@ -195,7 +195,8 @@ ul li:hover ul.dropdown{
 .footer {
     flex-shrink: 0
   }
-.footersection{
+
+  .footersection{
     background-color: #F3EDE1;
     width: 100%;
     display: flex;
@@ -203,6 +204,26 @@ ul li:hover ul.dropdown{
     align-items: center;
     justify-content: center;
     padding-bottom: 50px; padding-top: 50px;
+}
+
+
+.footersection .logo{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #000000;
+    text-transform: lowercase;
+    padding-bottom: 1rem;
+}
+
+.footersection .about-us{
+    font-size: 12px;
+    font-weight: 300;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-left: 20%; margin-right: 20%;
+    padding-bottom: 5rem;
+    text-align: center;
+
 }
 
 .footersection ul li{
@@ -232,25 +253,6 @@ ul li:hover ul.dropdown{
 }
 .footersection ul li:hover::after{
     width: 100%;
-}
-
-.footersection .logo{
-    font-size: 2rem;
-    font-weight: bolder;
-    color: #000000;
-    text-transform: lowercase;
-    padding-bottom: 1rem; padding-top: 5rem
-}
-
-.footersection .about-us{
-    font-size: 12px;
-    font-weight: 300;
-    color: #000000;
-    font-family: 'Inter', sans-serif;
-    margin-left: 20%; margin-right: 20%;
-    padding-bottom: 1rem;
-    text-align: center;
-
 }
 
 

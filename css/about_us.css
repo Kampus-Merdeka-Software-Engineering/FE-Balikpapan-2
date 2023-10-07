@@ -53,7 +53,7 @@ h4 {
 
 .baris{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 40px 40px;
 }
 
@@ -63,6 +63,7 @@ h4 {
     height: 200px;
     margin: 12px 0px;
 }
+
 
 .flip_card {
     border-radius: 20px;

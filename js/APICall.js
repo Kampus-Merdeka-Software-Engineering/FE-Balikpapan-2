@@ -19,4 +19,27 @@ const fetchGallery = async () => {
 
     })
 }
+
+async function sendEmail() {
+    const email = document.getElementById("subscription-box").value;
+  
+    try {
+      const sendEmail = await fetch(`${API_BASE_URL}/emails`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ email })
+    })
+    const response = await sendEmail.json();
+  
+    if (response.success) {
+      await fetchEmails(); // Refresh the message list after adding a new message
+    } else {
+      console.error(response.email);
+    }
+    } catch (error) {
+      console.error('Error adding email:', error);
+    }
+  }
 fetchGallery()

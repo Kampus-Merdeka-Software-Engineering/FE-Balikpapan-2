@@ -40,7 +40,7 @@ class Header extends HTMLElement {
                 <a href="./category_bottoms.html">Bottoms</a>
                 <a href="./category_dresses.html">Dresses</a>
                 <a href="./category_shopall.html">Shop All</a>
-                <a href="./index.html#bestsellers">Best Sellers</a>
+                <a href="../index.html#bestsellers">Best Sellers</a>
                 <a href="./about_us.html">About Us</a>
             </nav>
         </div>
@@ -49,7 +49,7 @@ class Header extends HTMLElement {
     
     <nav class="bottom-navbar">
         <ul>
-            <li><a href="./index.html" class="fas fa-home"></a></li>
+            <li><a href="../index.html" class="fas fa-home"></a></li>
             <li>
                 <a href class="fas fa-align-justify"></a>
                 <ul class="dropdown">
@@ -57,7 +57,7 @@ class Header extends HTMLElement {
                 <li><a href="./category_bottoms.html">Bottoms</a></li>
                 <li><a href="./category_dresses.html">Dresses</a></li>
                 <li><a href="./category_shopall.html">Shop All</a></li>
-                <li><a href="./index.html#bestsellers">Best Sellers</a></li>
+                <li><a href="../index.html#bestsellers">Best Sellers</a></li>
                 <li><a href="./about_us.html">About Us</a></li>
                 </ul>
             </li>

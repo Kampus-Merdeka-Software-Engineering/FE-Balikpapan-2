@@ -74,7 +74,9 @@
 }
 
 .bestsellerimages{
-
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: space-around;
     margin: 32px 120px;
     margin-bottom: 34px;
 }

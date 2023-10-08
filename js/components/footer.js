@@ -5,7 +5,16 @@ class Footer extends HTMLElement {
   
     connectedCallback() {
       this.innerHTML = `
-      <section class="footer">
+        <section class="footer">
+        <!-- SUBSCRIPTION SECTION -->
+        <section class="subscriptionsection">
+            <h1>DROP YOU EMAIL, GET EXCLUSIVE OFFERS</h1>
+            <form action="" class="subscription-form">
+                <input type="text" name="" placeholder="Your Email" id="subscription-box">
+                <button class="subscribe-btn">Subscribe</button>
+            </form>
+        </section>
+        
         <!-- FOOTER SECTION -->
         <section class="footersection">
             <div class="logo">sayayya.</div>

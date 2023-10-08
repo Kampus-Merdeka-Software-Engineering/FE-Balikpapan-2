@@ -7,7 +7,7 @@
   }
   
 body {
-    background: #DED6C4;
+    background: #cec0b3;
     text-align: center;
 }
 
@@ -118,7 +118,7 @@ h4 {
 .back {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: #F3EDE1;
     color: black;
     transform: rotateY(180deg);
     z-index: 1;

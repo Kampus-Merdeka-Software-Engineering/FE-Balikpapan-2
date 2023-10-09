@@ -18,24 +18,12 @@
 }
 
 .content{
-    /* display: flex;
-    margin: 32px 120px;
-    flex-direction: column; */
-
     display: flex;
     flex-wrap: wrap;   
     justify-content: space-around;
     margin: 32px 120px;
 }
 
-
-/* .baris{
-    width: 1200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 34px;
-} */
 
 .product{
     text-align: center;

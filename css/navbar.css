@@ -121,12 +121,6 @@ html::-webkit-scrollbar-thumb{
     background: #DED6C4;
 }
 
-/* .header .header-2.active{
-    position: fixed;
-    top:0; left:0; right:0;
-    z-index: 1000;
-} */
-
 
 .bottom-navbar{
     text-align: center;

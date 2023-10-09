@@ -1,8 +1,7 @@
-const API_BASE_URL = "mysql://root:Ow8gUSDijTT336C11MhI@containers-us-west-123.railway.app:5833/railway";
+const API_BASE_URL = "https://be-balikpapan-2-production.up.railway.app";
 
 const fetchGallery = async () => {
-    const galleryContainer = document.getElementsByClassName("galleryimages")
-
+    const galleryContainer = document.querySelector(".galleryimages"); 
     const gallery = await fetch(`${API_BASE_URL}/galleries`)
     const data = await gallery.json()
 
@@ -43,25 +42,27 @@ const fetchDresses = async () => {
 
 async function sendEmail() {
     const email = document.getElementById("subscription-box").value;
-  
+    console.log(email)
     try {
       const sendEmail = await fetch(`${API_BASE_URL}/emails`, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
+      // headers: {
+      //   "Content-Type": "application/json"
+      // },
       body: JSON.stringify({ email })
     })
-    const response = await sendEmail.json();
-  
-    if (response.success) {
-      await fetchEmails(); // Refresh the message list after adding a new message
+    // const response = await sendEmail.json();
+    // console.log(response)
+    if (sendEmail.ok) {
+      await sendEmail.json(); // Refresh the message list after adding a new message
     } else {
       console.error(response.email);
     }
-    } catch (error) {
+    } 
+    catch (error) {
       console.error('Error adding email:', error);
     }
   }
+
 fetchGallery()
 

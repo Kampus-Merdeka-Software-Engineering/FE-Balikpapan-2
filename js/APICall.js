@@ -40,29 +40,31 @@ const fetchDresses = async () => {
   })
 }
 
-async function sendEmail() {
+document.getElementById("subscription-form").addEventListener("submit", async function (event){
+    event.preventDefault()
     const email = document.getElementById("subscription-box").value;
     console.log(email)
     try {
-      const sendEmail = await fetch(`${API_BASE_URL}/emails`, {
+      const sendEmail = await fetch(`${API_BASE_URL}/subscribe`, {
       method: "POST",
-      // headers: {
-      //   "Content-Type": "application/json"
-      // },
-      body: JSON.stringify({ email })
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({email})
     })
-    // const response = await sendEmail.json();
-    // console.log(response)
+    
     if (sendEmail.ok) {
-      await sendEmail.json(); // Refresh the message list after adding a new message
+      const emailSent = await sendEmail.json(); // Refresh the message list after adding a new message
+      console.log(emailSent)
     } else {
-      console.error(response.email);
+      console.error(sendEmail.status);
     }
     } 
     catch (error) {
       console.error('Error adding email:', error);
     }
   }
-
+)
 fetchGallery()
+
 

@@ -5,13 +5,11 @@
 	font-family: Raleway, sans-serif;
 }
 
-
 .container{
     padding-top: 5rem;
     margin: 70px 40px;
     display: flex;
     justify-content: space-between;
-
 }
 .containerimg{
     width: 680px;

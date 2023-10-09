@@ -20,6 +20,27 @@ const fetchGallery = async () => {
     })
 }
 
+const fetchDresses = async () => {
+  const dressesContainer = document.getElementById("dresses_container")
+
+  const dresses = await fetch(`${API_BASE_URL}/dresses`)
+  const data = await dresses.json()
+
+  data.forEach((item) => {
+      const newDresses = document.createElement('div')
+      newDresses.classList.add('dresses')
+      newDresses.innerHTML=`
+        <div class="product">
+          <img src="${item.images}" alt="product1" width="220px" height="293px">
+          <div class="productname">${item.name}</div>
+          <div class="price">${item.price}</div>
+        </div>
+      `
+      dressesContainer.appendChild(newDresses)
+
+  })
+}
+
 async function sendEmail() {
     const email = document.getElementById("subscription-box").value;
   
@@ -43,3 +64,4 @@ async function sendEmail() {
     }
   }
 fetchGallery()
+

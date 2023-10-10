@@ -34,6 +34,8 @@ html::-webkit-scrollbar-thumb{
     background: #3F3836;
 }
 
+/* HEADER */
+
 .header {
     position:fixed;
     top: 0; left: 0; right: 0;
@@ -186,52 +188,6 @@ ul li:hover ul.dropdown{
 } 
 
 /* FOOTER */
-.subscriptionsection{
-    background-color: #ded6c4;
-    padding-bottom: 5rem; padding-top: 5rem;
-}
-
-
-.subscriptionsection h1{
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    padding-bottom: 2rem;
-}
-
-#subscription-box{
-    display: block;
-    height: 3rem;
-    width: 30rem;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    padding-left: 1rem;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.subscribe-btn {
-    display: block;
-    height: inherit;
-    background-color: #3F3836;
-    color: white;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    font-size: 14px;
-    font-weight: 400;
-    font-family: 'Inter', sans-serif;
-    cursor: pointer;
-    border-radius: 4px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.subscribe-btn:hover {
-    background-color: #000;
-    color: white;
-}
 .footer {
     flex-shrink: 0
   }
@@ -261,40 +217,9 @@ ul li:hover ul.dropdown{
     color: #000000;
     font-family: 'Inter', sans-serif;
     margin-left: 20%; margin-right: 20%;
-    padding-bottom: 5rem;
     text-align: center;
 
 }
-
-.footersection ul li{
-    list-style: none;
-    font-family: 'inter', sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    color: #000000;
-    display:inline-block;
-    margin: 0 50px;
-    position: relative;
-}
-.footersection ul li a{
-    text-decoration: none;
-    color: #3F3836;
-    text-transform: uppercase;
-}
-.footersection ul li::after{
-    content: '';
-    height: 3px;
-    width: 0;
-    background:#3F3836;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
-}
-.footersection ul li:hover::after{
-    width: 100%;
-}
-
 
 .socialsection{
     background-color: #3F3836;

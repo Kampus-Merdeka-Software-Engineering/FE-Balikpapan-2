@@ -33,7 +33,7 @@ class Header extends HTMLElement {
             </div>
         </div>
 
-        <div class="header-2">
+        <div class="header-2">  
             <nav class="navbar">
                 <a href="../index.html">Home</a>
                 <a href="./category_tops.html">Tops</a>
@@ -44,6 +44,7 @@ class Header extends HTMLElement {
                 <a href="./about_us.html">About Us</a>
             </nav>
         </div>
+        
 
     </header>
     

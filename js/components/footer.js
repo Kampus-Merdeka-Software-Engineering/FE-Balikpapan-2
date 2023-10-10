@@ -5,26 +5,11 @@ class Footer extends HTMLElement {
   
     connectedCallback() {
       this.innerHTML = `
-        <section class="footer">
-        <!-- SUBSCRIPTION SECTION -->
-        <section class="subscriptionsection">
-            <h1>DROP YOUR EMAIL, GET EXCLUSIVE OFFERS</h1>
-            <form action="" class="subscription-form">
-                <input type="text" name="" placeholder="Your Email" id="subscription-box">
-                <button type="submit" onclick="sendEmail()" class="subscribe-btn">Subscribe</button>
-            </form>
-        </section>
-        
+        <section class="footer">        
         <!-- FOOTER SECTION -->
         <section class="footersection">
             <div class="logo">sayayya.</div>
             <div class="about-us">Your go-to clothing brand for minimalist and everyday wear outfits.</div>
-            <ul class="footermenu">
-                <li><a href="#">FAQS</a></li>
-                <li><a href="#">PRIVACY POLICY</a></li>
-                <li><a href="#">TERMS OF SERVICE</a></li>
-                <li><a href="#">CONTACT US</a></li>
-            </ul>
         </section>
 
 

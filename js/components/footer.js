@@ -8,10 +8,10 @@ class Footer extends HTMLElement {
         <section class="footer">
         <!-- SUBSCRIPTION SECTION -->
         <section class="subscriptionsection">
-            <h1>DROP YOU EMAIL, GET EXCLUSIVE OFFERS</h1>
+            <h1>DROP YOUR EMAIL, GET EXCLUSIVE OFFERS</h1>
             <form action="" class="subscription-form">
                 <input type="text" name="" placeholder="Your Email" id="subscription-box">
-                <button class="subscribe-btn">Subscribe</button>
+                <button type="submit" onclick="sendEmail()" class="subscribe-btn">Subscribe</button>
             </form>
         </section>
         
@@ -58,5 +58,7 @@ class Footer extends HTMLElement {
     }
 }
 
-
+function sendEmail() {
+    alert("Thank you for subscribing!");
+  }
 customElements.define('footer-component', Footer);

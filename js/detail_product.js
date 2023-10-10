@@ -34,3 +34,7 @@ next.addEventListener("click", ()=>{
   scrollContainer.style.scrollBehavior = "smooth";
   scrollContainer.scrollLeft += 900;
 })
+
+function sendEmail() {
+  alert("Thank you for subscribing!");
+}

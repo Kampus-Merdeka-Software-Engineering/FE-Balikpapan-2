@@ -163,7 +163,7 @@
         <h1>DROP YOUR EMAIL, GET EXCLUSIVE OFFERS</h1>
         <form action="" id="subscription-form">
             <input type="text" name="email" placeholder="Your Email" id="subscription-box">
-            <button type="submit" class="subscribe-btn">Subscribe</button>
+            <button type="submit" onclick="sendEmail()" class="subscribe-btn">Subscribe</button>
         </form>
     </section>
 
@@ -211,6 +211,11 @@
 
 <!-- JAVASCRIPT -->
  <script src="./js/APICall.js"></script>
+ <script>
+    function sendEmail() {
+      alert("Thank you for subscribing!");
+    }
+</script>
 
 </body>
 </html>

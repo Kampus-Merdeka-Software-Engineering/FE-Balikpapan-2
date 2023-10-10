@@ -19,26 +19,6 @@ const fetchGallery = async () => {
     })
 }
 
-const fetchDresses = async () => {
-  const dressesContainer = document.getElementById("dresses_container")
-
-  const dresses = await fetch(`${API_BASE_URL}/dresses`)
-  const data = await dresses.json()
-
-  data.forEach((item) => {
-      const newDresses = document.createElement('div')
-      newDresses.classList.add('dresses')
-      newDresses.innerHTML=`
-        <div class="product">
-          <img src="${item.images}" alt="product1" width="220px" height="293px">
-          <div class="productname">${item.name}</div>
-          <div class="price">${item.price}</div>
-        </div>
-      `
-      dressesContainer.appendChild(newDresses)
-
-  })
-}
 
 document.getElementById("subscription-form").addEventListener("submit", async function (event){
     event.preventDefault()
@@ -54,7 +34,7 @@ document.getElementById("subscription-form").addEventListener("submit", async fu
     })
     
     if (sendEmail.ok) {
-      const emailSent = await sendEmail.json(); // Refresh the message list after adding a new message
+      const emailSent = await sendEmail.json(); 
       console.log(emailSent)
     } else {
       console.error(sendEmail.status);

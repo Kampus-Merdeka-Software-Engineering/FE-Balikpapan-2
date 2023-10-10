@@ -52,9 +52,12 @@ h4 {
 }
 
 .baris{
-    display: flex;
-    justify-content: space-around;
+    /* display: flex;
+    justify-content: space-around; */
     margin: 40px 40px;
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: space-around;
 }
 
 .front img{
@@ -70,7 +73,7 @@ h4 {
     background-color: transparent;
     width: 350px;
     height: 350px;
-    margin: 0px 20px;
+    margin: 20px 20px;
     perspective: 1000px;
 }
 
@@ -125,4 +128,11 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 950px){
+    .brand h2{
+        font-size: 16px;
+        width: 580px;
+    }
 }
